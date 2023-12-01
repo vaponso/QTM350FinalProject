@@ -6,15 +6,12 @@ Amazon Web Services (AWS) has a service for computer vision purposes. It is a cl
 ## Architecture Overview
 First we used Dog API to generate 15 random and realistic images of different dog breeds. Next, we used prompt engineering in DALL-E 3 to generate mimicked versions of the Dog API images by specifying variable such as breed, mood/expression, action, etc and then included a tweak to generate 15 more precise photos. We then sent these images to their respective S3 buckets within the AWS cloud. We ran those buckets through Sagemaker to do a model analysis in rekognition which generated confidence scores between the real and AI images.
 <img src='https://drive.google.com/uc?export=view&id=1tY4cXyk2Iea5922h3YNJAb9to9M0GSie' width='2000px'>
-### **Purpose**
+
+## **Purpose**
 
 Taking motivation from these listed issues, we wanted to evaluate DALLE-3's ability to create realistic images by using AWS Rekognition to distinguish between real and AI-generated images.
 
-
-<br>
-
-
-### **Hypothesis**
+## **Hypothesis**
 
 1. Real images will have higher confidence scores when detecting objects with label detection than the DALL-E 3 generated AI images.
 
