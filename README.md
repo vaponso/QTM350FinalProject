@@ -18,3 +18,9 @@ Taking motivation from these listed issues, we wanted to evaluate DALLE-3's abil
 2. A higher word count in DALL-E 3 prompt when creating an image for analysis will translate into a high confidence interval score.
 
 We will try to answer these hypothesis with out results from the data analsyis on the confidence interval data we get.
+
+##**Data Analysis**
+We made box plots to measuring confidence scores on common labels found by Rekognition and we performed regression analysis on word count in the promts for AI image generation. 
+
+##**Conclusion**
+In conclusion we can see that there are many factors when choosing how Rekognition and DALL-E 3 work together. We can see that Rekognition overall will give images created by DALL-E 3 higher confidence intervals. We can also see that adjustment made from prompts kead to some interesting results in AWS Rekognition, namely that Rekognition doesn't quite like the adjusted images as much as the first AI image. This can be slightly countered by increasing the number of words for the "tweak," which is also interesting since we observed that more words for the initial prompt actually decreased the confidence score in Rekognition. These could be worth further examining. Overall, this was a fun project of combining both an AWS ML API as well as another incredibly powerful and relevant AI tool, DALL-E. AI and ML will continue to grow in the coming years, and understanding how they work will prove incredibly useful both present and future.
